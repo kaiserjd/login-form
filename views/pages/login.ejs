@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <!--<script defer src="login.js"></script>-->
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="login">
+      <h1 id="login-header">Login</h1>
+
+      <form action="/auth" method="post">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+
+      <!-- <div id="login-msg-holder" class="msg-holder">
+        <p id="login-error-msg">Invalid username and/or password</p>
+      </div> -->
+      <% if (incorrectCredentials) { %>
+      <p id="login-error-msg">Invalid username and/or password</p>
+      <% } %>
+    </div>
+  </body>
+</html>

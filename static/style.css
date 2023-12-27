@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-top: 15px;
+}
+.msg-holder {
+  opacity: 1;
+}
+.login form input {
+  margin: 5px 0px;
+  height: 30px;
+  padding: 5px;
+}
